@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Raleway", sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p{
+	font-size: 14px;
+}
