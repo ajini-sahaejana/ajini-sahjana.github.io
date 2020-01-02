@@ -13,6 +13,41 @@ p{
 	font-size: 14px;
 }
 
+/*Generic CSS*/
+.section-title{
+	padding-top: 90px;
+	padding-bottom: 50px;
+}
+
+.section-title h2{
+	position: relative;
+	text-align: center;
+	color: #333;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.section-title h2:after{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	width: 60px;
+	height: 1px;
+	background-color: #129CF3;
+	margin-left: -30px;
+}
+
+.section-title p{
+	color: #333;
+	font-size: 18px;
+	line-height: 28px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: 45px;
+}
+
 .row1{
 	display: flex;
 	flex-wrap: wrap;
@@ -27,12 +62,12 @@ p{
 	margin-top: 4px;
 	vertical-align: middle;
 	width: 100%;
-	border-radius: 3px;
+	border-radius: 5px;
 }
 
 /*Header*/
 .header{
-	background-image: url("../images/background.png");
+	background-image: url("../images/background/a.png");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
@@ -43,22 +78,25 @@ p{
 }
 
 .header-overlay{
-	background-color: rgba(31,31,31,0.85);
+	background-color: rgba(0,0,0,0.81);
 }
 
 #main-logo{
 	width: 10%;
-	padding-bottom: 45px;
-	padding-top: 25px;
+	padding-bottom: 30px;
+	padding-top: 20px;
 }
 
 .header-text h1{
+	font-family: 'Bad Script', cursive; 
 	color: #fff;
-	font-size: 35px;
+	font-size: 45px;
 	font-weight: 500;
-	line-height: 45px;
-	padding-top: 20px;
+	line-height: 50px;
 	text-transform: uppercase;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	transition-property:all;
 }
 
 .header-text p{
@@ -66,11 +104,18 @@ p{
 	font-size: 17px;
 	line-height: 28px;
 	font-weight: 300;
+	padding-bottom: 30px;
 }
-
+.header-text h2{
+	color: #fff;
+	font-size: 30px;
+	line-height: 35px;
+	font-weight: 300;
+}
 .header-btns{
-	margin-top: 90px;
+	margin-top: 30px;
 	margin-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .btn-matter,
@@ -124,4 +169,74 @@ p{
 
 .btn-tour p{
 	font-size: 10px;
+}
+
+/*About Us*/
+.choose-us-wrapper{
+	padding-top: 30px;
+}
+
+.about-us-video video{
+	margin-top: 8px;
+}
+
+..choose-us-title{
+	padding-bottom: 50px;
+}
+
+.choose-us-title h2{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 37px;
+	position: relative;
+}
+
+.choose-us-title h2:after{
+	content: "";
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+	width: 70px;
+	height: 1px;
+	background-color: #129CF3;
+}
+
+.choose-us-title p{
+	margin-top: 40px;
+	font-size: 19px;
+	line-height: 24px;
+	padding-bottom: 10px;
+}
+.choose-us-item{
+	position: relative;
+	padding-bottom: 4px;
+	padding-left: 80px;
+}
+
+.choose-us-item div{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.choose-us-item div i{
+	font-size: 55px;
+	color: #129CF3;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.choose-us-item h3{
+	color: #343434;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.choose-us-item p{
+	color: #4D4D4D;
+	font-size: 15px;
 }
