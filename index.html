@@ -23,17 +23,27 @@
 </head>
 <body>
 	<!--Header-->
-	<header class="header">
+	<header class="header" id="HOME">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="navbar-header">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<a class="navbar-brand" href="#HOME"><img src="images/logo-small.png" alt="logo">Your Voice Matters!</a>
+			</div>
+			<div class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item"><a href="#HOME" class="nav-link active">HOME</a></li>
+					<li class="nav-item"><a href="#ABOUT" class="nav-link">ABOUT US</a></li>
+					<li class="nav-item"><a href="#FEATURES" class="nav-link">FEATURES</a></li>
+					<li class="nav-item"><a href="#CONTACT" class="nav-link">CONTACT US</a></li>
+					<li class="nav-item"><a href="#" class="nav-link">WRITE ABOUT YOUR CONCERN</a></li>
+				</ul>
+			</div>  
+		</nav>
 		<div class="header-overlay">
 			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<!--Logo-->
-						<div class="logo text-left">
-							<img id="main-logo" src="images/logo.png" alt="logo">
-						</div>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-6">
 						<div class="header-text">
@@ -54,27 +64,27 @@
 					<div class="col-md-6">
 						<div class="row1">
 							<div class="col-grid">
-							    <img src="images/1.jpg">
-							    <img src="images/2.jpg">
-							    <img src="images/3.jpg">
+								<img src="images/1.jpg">
+								<img src="images/2.jpg">
+								<img src="images/9.jpg">
+								<img src="images/11.jpg">
 							</div>
 							<div class="col-grid">
-							    <img src="images/4.jpg">
-							    <img src="images/9.jpg">
-							    <img src="images/11.jpg">
-							    <img src="images/12.jpg">
-							    <img src="images/10.jpg">
+								<img src="images/15.jpg">
+								<img src="images/3.jpg">
+								<img src="images/12.jpg">
+								<img src="images/10.jpg">
 							</div>
 							<div class="col-grid">
-							    <img src="images/7.jpg">
-							    <img src="images/8.jpg">
+								<img src="images/7.jpg">
+								<img src="images/8.jpg">
+								<img src="images/5.jpg">
+							</div>
+							<div class="col-grid">
+								<img src="images/4.jpg">
+								<img src="images/14.jpg">
+								<img src="images/13.jpg">
 								<img src="images/6.jpg">
-							</div>
-							<div class="col-grid">
-							    <img src="images/15.jpg">
-							    <img src="images/14.jpg">
-							    <img src="images/13.jpg">
-							    <img src="images/5.jpg">
 							</div>
 						</div>
 					</div>
@@ -85,7 +95,7 @@
 
 	<!--About us-->
 	<section id="white">
-		<div class="container">
+		<div class="container" id="ABOUT">
 			<div class="row">
 				<div class="col-md-10 offset-1">
 					<!--About Us Title & Desc-->
@@ -179,10 +189,10 @@
 						<div id="carousel-testimonial" class="carousel slide" data-ride="carousel">
 							<!--indicators-->
 							<ol class="carousel-indicators">
-							    <li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
-							    <li data-target="#carousel-testimonial" data-slide-to="1"></li>
-							    <li data-target="#carousel-testimonial" data-slide-to="2"></li>
-							    <li data-target="#carousel-testimonial" data-slide-to="3"></li>
+								<li data-target="#carousel-testimonial" data-slide-to="0" class="active"></li>
+								<li data-target="#carousel-testimonial" data-slide-to="1"></li>
+								<li data-target="#carousel-testimonial" data-slide-to="2"></li>
+								<li data-target="#carousel-testimonial" data-slide-to="3"></li>
 							</ol>
 							<!--wrapper for slides-->
 							<div class="carousel-inner">
@@ -261,7 +271,7 @@
 
 	<!--What's happenning-->
 	<section id="white" class="features">
-		<div class="container">
+		<div class="container" id="FEATURES">
 			<div class="row">
 				<div class="col-md-10 offset-1">
 					<div class="section-title">
@@ -417,7 +427,7 @@
 
 	<!--Contact us-->
 	<section id="white" class="contact-us">
-		<div class="container">
+		<div class="container" id="CONTACT">
 			<div class="row">
 				<div class="col-md-10 offset-1">
 					<div class="section-title">
@@ -469,14 +479,14 @@
 			<div class="row">
 				<div class="col-md-6">
 					<div id="copyright">
-						<p>Copyright &copy; 2020 <a href="#"> - Your Voice Matters!</a></p>
+						<p>Copyright &copy; 2020 <a href="#HOME"> - Your Voice Matters!</a></p>
 						<p>This site is protected by reCAPTCHA and the Google 
 							<a href="https://policies.google.com/privacy" class="sc-fjdhpX bUZXjM">Privacy Policy</a> and 
 							<a href="https://policies.google.com/terms" class="sc-fjdhpX bUZXjM">Terms of Service</a> apply.
 						</p>
 					</div>
 				</div>				
-				<div class="col-md-4 offset-2">
+					<div class="col-md-4 offset-2">
 					<div class="language">
 						<select class="languagepicker">
 							<option value="en-US">English</option>
@@ -484,7 +494,7 @@
 						</select>
 					</div>
 					<div class="scroll-top">
-						<a href="#"><i class="fa fa-angle-up"></i></a>
+						<a href="#HOME"><i class="fa fa-angle-up"></i></a>
 					</div>
 				</div>
 			</div>

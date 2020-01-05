@@ -65,6 +65,46 @@ p{
 	border-radius: 5px;
 }
 
+/*Navigation*/
+.navbar-dark{
+	padding: 0px 20px;
+    background:rgba(0,0,0,0.5);
+    z-index: 110;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    border-bottom: 1px solid #333;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: #ccc;
+    font-family: "Raleway", sans-serif;
+    transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+ 	padding: 6px 20px;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #129CF3;
+}
+.navbar-dark .navbar-nav .nav-link:focus{
+	color: #ccc;
+}
+.navbar-brand img{
+	padding: 0px 10px;
+	transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+}
+.navbar-dark .navbar-nav> .active>a,
+.navbar-dark .navbar-nav> .active>:hover,
+.navbar-dark .navbar-nav> .active>:focus{
+	background-color: transparent;
+	color: #129CF3;
+}
+
 /*Header*/
 .header{
 	background-image: url("../images/background/a.png");
@@ -79,22 +119,17 @@ p{
 
 .header-overlay{
 	background-color: rgba(0,0,0,0.8);
-}
-
-#main-logo{
-	width: 10%;
-	padding-bottom: 30px;
-	padding-top: 20px;
+	padding-top: 140px;
 }
 
 .header-text h1{
 	color: #fff;
-	font-size: 45px;
-	font-weight: 600;
-	line-height: 50px;
+	font-size: 55px;
+	line-height: 65px;
+	font-weight: 900;
 	text-transform: uppercase;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 10px;
+	padding-bottom: 20px;
 	transition-property:all;
 }
 
@@ -600,13 +635,19 @@ p{
 	text-align: right;
 }
 .languagepicker {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
 	width: 200px;
-	border: 2px solid #129CF3;
+	border: 1px solid #129CF3;
+	border-bottom: 2px #129CF3 solid;
 	border-radius: 5px;
 	line-height: normal;
-	height: 2.5rem;
-	padding: 0px 10px;
-	font-size: 0.8rem;
+    padding: 7px 10px 6px 10px;
+    background: url("../images/arrow.png") 95% /10px no-repeat #fff;
+    margin-top: 1px;
+    font-size: 14px;
 }
 
 .scroll-top{
