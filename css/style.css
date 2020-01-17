@@ -67,7 +67,7 @@ p{
 
 /*Navigation*/
 .navbar-dark{
-	padding: 0px 15px;   /*top right bottom left*/
+	padding: 15px 20px;   /*top right bottom left*/
     z-index: 110;
     transition: all 1s;
     -moz-transition: all 1s;
@@ -81,7 +81,7 @@ p{
     -moz-transition: all 1s;
     -o-transition: all 1s;
     -webkit-transition: all 1s;
- 	padding: 0px 15px;
+ 	padding: 10px 15px;
 }
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #129CF3;
@@ -90,12 +90,18 @@ p{
 	color: #ccc;
 }
 .navbar-brand img{
-	padding: 2px;
+	margin-top: -15px;
+	margin-bottom: -80px;
+	width: 120px;
+	padding: 0px;
+	margin-left: 75px;
+	margin-right: 10px;
 	transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
+
 .navbar-dark .navbar-nav> .active>a,
 .navbar-dark .navbar-nav> .active>:hover,
 .navbar-dark .navbar-nav> .active>:focus{
@@ -740,9 +746,15 @@ p{
     color: #129CF3;
 }
 
+.footer-col img{
+	width: 120px;
+	margin-top: 20px;
+	margin-left: 35px;
+}
+
 .scroll-top{
 	margin-top: 90px;
-	margin-left: 100px;
+	margin-left: 75px;
 	display: inline-block;
 }
 .scroll-top a{
