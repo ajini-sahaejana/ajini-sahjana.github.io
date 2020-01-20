@@ -1,23 +1,33 @@
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
-
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "Raleway", sans-serif;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+p{
+	font-size: 14px;
 }
 
 body {
-	background: #f6f5f7;
+	background-size: cover;
+	background-image: url("background.png");
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'raleway', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
 }
 
 h1 {
-	font-weight: bold;
+	font-weight: 400;
 	margin: 0;
 }
 
@@ -26,11 +36,11 @@ h2 {
 }
 
 p {
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 100;
 	line-height: 20px;
 	letter-spacing: 0.5px;
-	margin: 20px 0 30px;
+	margin: 20px 0 20px;
 }
 
 span {
@@ -45,6 +55,7 @@ a {
 }
 
 button {
+	cursor: pointer;
 	border-radius: 20px;
 	border: 1px solid #129CF3;
 	background-color: #129CF3;
@@ -121,7 +132,6 @@ input {
 .sign-up-container {
 	left: 0;
 	width: 50%;
-	opacity: 0;
 	z-index: 1;
 }
 
@@ -209,44 +219,4 @@ input {
 
 .container.right-panel-active .overlay-right {
 	transform: translateX(20%);
-}
-
-.social-container {
-	margin: 20px 0;
-}
-
-.social-container a {
-	border: 1px solid #DDDDDD;
-	border-radius: 50%;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 5px;
-	height: 40px;
-	width: 40px;
-}
-
-footer {
-    background-color: #222;
-    color: #fff;
-    font-size: 14px;
-    bottom: 0;
-    position: fixed;
-    left: 0;
-    right: 0;
-    text-align: center;
-    z-index: 999;
-}
-
-footer p {
-    margin: 10px 0;
-}
-
-footer i {
-    color: red;
-}
-
-footer a {
-    color: #3c97bf;
-    text-decoration: none;
 }
