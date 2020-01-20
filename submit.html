@@ -14,16 +14,400 @@
 	<!--css-->			
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/submit.css">
 	
 	<!--fontawesome-->
 	<link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
-	<section>
-		<div class="container">
-			
+	<!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+		<a class="navbar-brand" href="#HOME"><img src="images/logo.png" alt="logo"></a>
+		<div class="navbar-header">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 		</div>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a href="index.html#HOME" class="nav-link active">HOME</a></li>
+				<li class="nav-item"><a href="index.html#ABOUT" class="nav-link">ABOUT US</a></li>
+				<li class="nav-item"><a href="index.html#FEATURES" class="nav-link">FEATURES</a></li>
+				<li class="nav-item"><a href="index.html#CONTACT" class="nav-link">CONTACT US</a></li>
+				<li class="nav-item"><a href="register.html" class="nav-link">LOG OUT</a></li>
+			</ul>
+		</div>  
+	</nav>
+
+	<section class="submit">
+		<div class="container">
+			<div class="alert alert-success">
+				<p>You are now logged in!</p>
+			</div>
+			<h3>Welcome, Ajini!</h3>
+			<div class="alert alert-warning">
+				<p>You need to verify your account.<br>
+					Sign in to your email account and click on the verification link we just sent you at <strong>ajisahejana@gmail.com</strong></p>
+			</div>
+			<button class="btn btn-block btn-lg btn-primary">
+				Account Verified!
+			</button>
+		</div>
+		<div class="container">
+			<div class="row">
+				<h2><br><br><br>What kind of an issue are you concerned about?</h2>
+				<p>
+					Selecting a topic allows us to recommend your petition to interested supporters.
+				</p>
+			</div>
+				<div class="page-form">
+					<h3 class="field-title">1. Your Name
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="wpcf7-form-control-wrap your-name">
+							<input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+						</span>
+					</p>
+					<h3 class="field-title">2. Your Position in the Organization
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="wpcf7-form-control-wrap your-position">
+							<input type="text" name="your-position" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+						</span>
+					</p>
+					<h3 class="field-title">3. Your Email Address
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="wpcf7-form-control-wrap your-email">
+							<input type="text" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+						</span>
+					</p>
+					<h3 class="field-title">4. Name of the Project
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="wpcf7-form-control-wrap project-name">
+							<input type="text" name="project-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+						</span>
+					</p>
+					<h3 class="field-title">5. Name of the Organization</h3>
+					<p>
+						<span class="field-description">If you’re not an organization, keep this field empty.</span>
+						<span class="wpcf7-form-control-wrap organization-name">
+							<input type="text" name="organization-name" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false">
+						</span>
+					</p>
+					<h3 class="field-title">6. Description of the Organization</h3>
+					<p>
+						<span class="field-description">Please give us a summary of your organization. Include the purpose, the country(s) of operation. If you’re not an organization, mention your groups/your overall purpose. <br>
+							<strong>Characters left: 
+								<span class="wpcf7-character-count down" data-target-name="organization-description" data-starting-value="500" data-current-value="500" data-maximum-value="500">500</span>
+							</strong>
+						</span>
+						<span class="wpcf7-form-control-wrap organization-description">
+							<textarea name="organization-description" cols="40" rows="10" maxlength="500" class="wpcf7-form-control wpcf7-textarea textarea-large" aria-invalid="false"></textarea>
+						</span>
+					</p>
+					<h3 class="field-title">7. Description of the Project
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="field-description">Give us a full overview of the project. The history, how it will be organized, why is it being organized and tell us the social impact you are hoping to make. Include ANY and ALL information about the project. Be VERY elaborative. <br>
+							<strong>Characters left: 
+								<span class="wpcf7-character-count down" data-target-name="project-description" data-starting-value="1000" data-current-value="1000" data-maximum-value="1000">1000</span>
+							</strong>
+						</span>
+						<span class="wpcf7-form-control-wrap project-description">
+							<textarea name="project-description" cols="40" rows="10" maxlength="1000" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required textarea-large" aria-required="true" aria-invalid="false"></textarea>
+						</span>
+					</p>
+					<h3 class="field-title">8. Which Sustainable Development Goal(s) does this project accomplish?
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="field-description">
+							<a href="https://www.un.org/sustainabledevelopment/sustainable-development-goals/" target="_blank">The Sustainable Development Goals</a> (SDGs) are a collection of 17 global goals designed to be a "blueprint to achieve a better and more sustainable future for all”.
+						</span>
+					</p>
+					<div class="row">
+						<div class="col-md-6">
+							<span class="wpcf7-form-control-wrap project-sdgs">
+								<span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+									<span class="wpcf7-list-item first">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="No Poverty">
+											<span class="wpcf7-list-item-label">No Poverty</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Zero Hunger">
+											<span class="wpcf7-list-item-label">Zero Hunger</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Good Health and Well-being">
+											<span class="wpcf7-list-item-label">Good Health and Well-being</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Quality Education">
+											<span class="wpcf7-list-item-label">Quality Education</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Gender Equality">
+											<span class="wpcf7-list-item-label">Gender Equality</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Clean Water and Sanitation">
+											<span class="wpcf7-list-item-label">Clean Water and Sanitation</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Affordable and Clean Energy">
+											<span class="wpcf7-list-item-label">Affordable and Clean Energy</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Decent Work and Economic Growth">
+											<span class="wpcf7-list-item-label">Decent Work and Economic Growth</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item last">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Industry, Innovation and Infrastructure">
+											<span class="wpcf7-list-item-label">Industry, Innovation and Infrastructure</span>
+										</label>
+									</span>
+								</span>
+							</span>
+						</div>
+						<div class="col-md-6">
+							<span class="wpcf7-form-control-wrap project-sdgs">
+								<span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required">
+									<span class="wpcf7-list-item first">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Reduced Inequality">
+											<span class="wpcf7-list-item-label">Reduced Inequality</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Sustainable Cities and Communities">
+											<span class="wpcf7-list-item-label">Sustainable Cities and Communities</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Responsible Consumption and Production">
+											<span class="wpcf7-list-item-label">Responsible Consumption and Production</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Climate Action">
+											<span class="wpcf7-list-item-label">Climate Action</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Life Below Water">
+											<span class="wpcf7-list-item-label">Life Below Water</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Life on Land">
+											<span class="wpcf7-list-item-label">Life on Land</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Peace and Justice Strong Institutions">
+											<span class="wpcf7-list-item-label">Peace and Justice Strong Institutions</span>
+										</label>
+									</span>
+									<span class="wpcf7-list-item last">
+										<label>
+											<input type="checkbox" name="project-sdgs[]" value="Partnerships to achieve the Goal">
+											<span class="wpcf7-list-item-label">Partnerships to achieve the Goal</span>
+										</label>
+									</span>
+								</span>
+							</span>
+						</div>
+					</div>
+					<h3 class="field-title">9. Location of the Project
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="field-description">Let us know where it is happening. If it’s happening in multiple locations, list them using commas (,). Provide a detailed address and include the country.</span>
+						<span class="wpcf7-form-control-wrap project-location">
+							<textarea name="project-location" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
+						</span>
+					</p>
+					<h3 class="field-title">10. Date and Time (UTC+0)
+						<span class="field-asterix">Required</span>
+					</h3>
+					<p>
+						<span class="field-description">Let us know the date and time. If it is happening in a date range and/or a time range, let us know about it. 
+							<span class="text-underline">DON’T USE NUMBER FORMAT</span>. Make sure to list your date in words (e.g.: February 4, 2017).</span>
+							<span class="wpcf7-form-control-wrap project-date">
+								<input type="text" name="project-date" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+							</span>
+						</p>
+						<h3 class="field-title">11. Volunteer Responsibilities
+							<span class="field-asterix">Required</span>
+						</h3>
+						<p>
+							<span class="field-description">This is the most important part of the submission. List our volunteer responsibilities. Make sure these responsibilities are VERY SPECIFIC and clear. If this section is not clear, your project might not be posted. List out what the volunteers have to do. <br>
+								<strong>Characters left: 
+									<span class="wpcf7-character-count down" data-target-name="volunteer-responsibilities" data-starting-value="700" data-current-value="700" data-maximum-value="700">700
+									</span>
+								</strong>
+							</span>
+							<span class="wpcf7-form-control-wrap volunteer-responsibilities">
+								<textarea name="volunteer-responsibilities" cols="40" rows="10" maxlength="700" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required textarea-large" aria-required="true" aria-invalid="false"></textarea>
+							</span>
+						</p>
+						<h3 class="field-title">12. Benefits to Volunteers</h3>
+						<p>
+							<span class="field-description">
+								List out the benefits (if any). You can mention any networking, experience they might be able to get. But be sure to be very specific. If you’re providing them any incentive, mention it here. <br>
+								<strong>
+									Characters left: 
+									<span class="wpcf7-character-count down" data-target-name="volunteer-benefits" data-starting-value="700" data-current-value="700" data-maximum-value="700">700
+									</span>
+								</strong>
+							</span>
+							<span class="wpcf7-form-control-wrap volunteer-benefits">
+								<textarea name="volunteer-benefits" cols="40" rows="10" maxlength="700" class="wpcf7-form-control wpcf7-textarea textarea-large" aria-invalid="false">
+								</textarea>
+							</span>
+						</p>
+						<h3 class="field-title">13. Apply and Contact Details
+							<span class="field-asterix">Required</span>
+						</h3>
+						<p>
+							<span class="field-description">Give us links/email addresses of how volunteers can get in touch or sign up. Make sure to double-check the links for any mistyped letters.</span>
+							<span class="wpcf7-form-control-wrap project-links">
+								<textarea name="project-links" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false">
+								</textarea>
+							</span>
+						</p>
+						<h3 class="field-title">14. Social Media Links</h3>
+						<p>
+							<span class="field-description">Type any social media links or the link to the website of your organization (if any).</span>
+							<span class="wpcf7-form-control-wrap social-links">
+								<textarea name="social-links" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false"></textarea>
+							</span>
+						</p>
+						<h3 class="field-title">15. Project Image</h3>
+						<p>
+							<span class="field-description">When you upload an image, you confirm that you have the rights to use this image.</span>
+							<span class="wpcf7-form-control-wrap project-image">
+								<input type="file" name="project-image" size="40" class="wpcf7-form-control wpcf7-file" accept=".gif,.png,.jpg,.jpeg" aria-invalid="false">
+							</span>
+						</p>
+						<h3 class="field-title">Confirmation</h3>
+						<p>
+							<span class="field-description">You confirm that the above information are true to the best of you knowledge and that you adhere to the restrictions mentioned at the beginning of this document.</span>
+						</p>
+						<div class="wpcf7-response-output wpcf7-display-none"></div>
+						<p>
+							<input type="submit" value="Submit" class="wpcf7-form-control wpcf7-submit btn btn-simple btn-simple-grey">
+							<span class="ajax-loader"></span>
+						</p>
+					</div>
+				</div>
+			</div>
 	</section>
+
+
+	<!--Footer-->
+	<footer class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 footer-col">
+					<div id="copyright">
+						<h1 class="footer-title">Disclaimer</h1>
+						<p>Copyright &copy; 2020 <a href="#HOME"> - Your Voice Matters!</a></p>
+						<p>This site is protected by reCAPTCHA and the Google 
+							<a href="https://policies.google.com/privacy" class="sc-fjdhpX bUZXjM">Privacy Policy</a> and 
+							<a href="https://policies.google.com/terms" class="sc-fjdhpX bUZXjM">Terms of Service</a> apply.
+						</p>
+					</div>
+				</div>
+				<div class="footer-col col-md-3 footer-connect">
+					<h1 class="footer-title">Connect</h1>
+					<a href="https://www.facebook.com/" target="_blank" class="footer-sm-block">
+						<span class="fa fa-facebook"></span>
+						<span class="footer-sm-text">yourvoicematters</span>
+					</a>
+					<a href="https://www.instagram.com/" target="_blank" class="footer-sm-block">
+						<span class="fa fa-instagram"></span>
+						<span class="footer-sm-text">yourvoicemattersl</span>
+					</a>
+					<a href="https://twitter.com/" target="_blank" class="footer-sm-block">
+						<span class="fa fa-twitter"></span>
+						<span class="footer-sm-text">yvm-sl</span>
+					</a>
+					<a href="https://www.whatsapp.com/" target="_blank" class="footer-sm-block">
+						<span class="fa fa-whatsapp"></span>
+						<span class="footer-sm-text">0766023273</span>
+					</a>
+					<a href="https://www.linkedin.com/company" target="_blank" class="footer-sm-block">
+						<span class="fa fa-linkedin"></span>
+						<span class="footer-sm-text">Your Voice Matters - SL</span>
+					</a>
+				</div>				
+				<div class="footer-col col-md-3 offset-1">
+					<h1 class="footer-title">Quick Links</h1>
+					<div class="footer-links">
+						<ul>
+							<li><a href="https://www.ivint.org/wp-content/uploads/2019/11/Media-Kit-IV.pdf">Submit Your Concern</a></li>
+							<li><a href="https://www.ivint.org/team/">The Team</a></li>
+							<li><a href="https://www.ivint.org/feedback/">Privacy Policy</a></li>
+							<li><a href="https://www.ivint.org/feedback/">FAQ</a></li>
+						</ul>
+					</div>
+					<h1 class="footer-title">Language</h1>
+					<div class="language">
+						<select class="languagepicker">
+							<option value="en-US">English</option>
+							<option value="si-si">සිංහල</option>
+						</select>
+					</div>
+				</div>
+				<div class="footer-col col-md-1 footer-connect">	
+					<img src="images/logo.png" alt="logo">
+					<div class="scroll-top">
+						<a href="#HOME"><i class="fa fa-angle-up"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--Bootsrap JS-->
+	<script src="js/jquery.js"></script>
+	<script type="js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<!--custom js-->
+	<script src="js/custom.js" type="text/javascript"></script>
+
 </body>
 </html>
