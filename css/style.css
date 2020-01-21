@@ -13,25 +13,6 @@ p{
 	font-size: 14px;
 }
 
-#ABOUT{
-	background-image: url("../images/background.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#FEATURES{
-	background-image: url("../images/background.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-#CONTACT{
-	background-image: url("../images/background.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
 /*Generic CSS*/
 .section-title{
 	padding-top: 90px;
@@ -41,7 +22,7 @@ p{
 .section-title h2{
 	position: relative;
 	text-align: center;
-	color: #000;
+	color: #333;
 	font-size: 30px;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -59,7 +40,7 @@ p{
 }
 
 .section-title p{
-	color: #000;
+	color: #4D4D4D;
 	font-size: 18px;
 	line-height: 28px;
 	font-weight: 300;
@@ -94,7 +75,7 @@ p{
     -webkit-transition: all 1s;
 }
 .navbar-dark .navbar-nav .nav-link{
-	color: #B5B5B5;
+	color: #ccc;
     font-family: "Raleway", sans-serif;
     transition: all 1s;
     -moz-transition: all 1s;
@@ -106,7 +87,7 @@ p{
 	color: #129CF3;
 }
 .navbar-dark .navbar-nav .nav-link:focus{
-	color: #B5B5B5;
+	color: #ccc;
 }
 .navbar-brand img{
 	margin-top: -15px;
@@ -120,15 +101,12 @@ p{
     -o-transition: all 1s;
     -webkit-transition: all 1s;
 }
-.navbar-dark .navbar-nav> .active>a,{
-	color: #B5B5B5;
-}
 
 .navbar-dark .navbar-nav> .active>a,
-.navbar-dark .navbar-nav> .active>a:hover,
-.navbar-dark .navbar-nav> .active>a:focus{
+.navbar-dark .navbar-nav> .active>:hover,
+.navbar-dark .navbar-nav> .active>:focus{
 	background-color: transparent;
-	color: #129CF3 !important;
+	color: #129CF3;
 }
 
 /*Header*/
@@ -145,7 +123,7 @@ p{
 
 .header-overlay{
 	background-color: rgba(0,0,0,0.8);
-	padding-top: 130px;
+	padding-top: 140px;
 }
 
 .header-text h1{
@@ -164,7 +142,7 @@ p{
 	font-size: 17px;
 	line-height: 28px;
 	font-weight: 300;
-	padding-bottom: 10px;
+	padding-bottom: 30px;
 }
 .header-text h2{
 	color: #fff;
@@ -173,9 +151,9 @@ p{
 	font-weight: 300;
 }
 .header-btns{
-	margin-top: 10px;
-	margin-bottom: 3px;
-	padding-bottom: 3px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding-bottom: 30px;
 }
 
 .btn-matter,
@@ -232,6 +210,12 @@ p{
 }
 
 /*About Us*/
+#white{
+	background-image: url("../images/background.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 .choose-us-wrapper{
 	background-color: rgba(0, 0, 64, 0.2);
@@ -266,7 +250,6 @@ p{
 }
 
 .choose-us-title p{
-	color: #000;
 	margin-top: 40px;
 	font-size: 18px;
 	line-height: 24px;
@@ -294,14 +277,14 @@ p{
 }
 
 .choose-us-item h3{
-	color: #000;
+	color: #343434;
 	text-transform: uppercase;
 	font-size: 20px;
 	font-weight: 500;
 }
 
 .choose-us-item p{
-	color: #000;
+	color: #4D4D4D;
 	font-size: 15px;
 }
 
@@ -393,10 +376,10 @@ p{
 	font-size: 25px;
 	font-weight: 400;
 	margin-bottom: 25px;
-	color: #000;
+	color: #333;
 }
 .left-feature-item p{
-	color:#000;
+	color:#333;
 	font-size:16px;
 	font-weight:300;
 	line-height: 25px;
@@ -438,10 +421,10 @@ p{
 	font-size: 25px;
 	font-weight: 400;
 	margin-bottom: 25px;
-	color: #000;
+	color: #333;
 }
 .right-feature-item p{
-	color:#000;
+	color:#333;
 	font-size:16px;
 	font-weight:300;
 	line-height: 25px;
@@ -469,7 +452,7 @@ p{
 	background-color: #129CF3;
 	border: 1px solid #129CF3;
 	color: #fff;
-	border-radius: 50px;
+	border-radius: 3px;
 	margin: 5px;
 	padding: 15px 35px;
 	text-transform: uppercase;
