@@ -4,17 +4,10 @@
 	padding: 0;
 }
 
-body{
+body {
 	font-family: "Raleway", sans-serif;
 	overflow-y: scroll;
 	overflow-x: hidden;
-}
-
-p{
-	font-size: 14px;
-}
-
-body {
 	background-size: cover;
 	background-image: url("background.png");
 	display: flex;
@@ -24,6 +17,7 @@ body {
 	font-family: 'raleway', sans-serif;
 	height: 100vh;
 	margin: -20px 0 50px;
+	padding-top: 50px;
 }
 
 h1 {
