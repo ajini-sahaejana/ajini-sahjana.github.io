@@ -11,7 +11,7 @@
 <body>
 	<div class="container" id="container">
 		<div class="form-container sign-up-container">
-			<form action="login.php" method="POST">
+			<form action="login.php" method="POST" onsubmit="return checkForm(this);">
 				<h1>Create Account</h1>
 
 				<?php if(count($errors) > 0) : ?>
@@ -24,13 +24,18 @@
 
 				<input type="text" name="username" placeholder="Name" value="<?php echo $username;?>" />
 				<input type="email" name="email" placeholder="Email" value="<?php echo $email;?>" />
-				<input type="password" name="password" placeholder="Password" />
-				<input type="password" name="passwordConf" placeholder="Confirm Password" />
+				<input type="password" name="password" placeholder="Password" title="Password must contain at least 6 characters, including UPPER/lowercase and numbers" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd1" onchange="
+  this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+  if(this.checkValidity()) form.pwd2.pattern = RegExp.escape(this.value);
+"/>
+				<input type="password" name="passwordConf" placeholder="Confirm Password" title="Please enter the same Password as above" type="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" name="pwd2" onchange="
+  this.setCustomValidity(this.validity.patternMismatch ? this.title : '');
+"/>
 				<button type="submit" name="signupbtn">Sign Up</button>
 			</form>
 		</div>
 		<div class="form-container sign-in-container">
-			<form action="login.php" method="POST">
+			<form action="login.php" method="POST" >
 				<h1>Sign In</h1>
 
 				<?php if(count($errorl) > 0) : ?>

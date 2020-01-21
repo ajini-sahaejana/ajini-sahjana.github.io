@@ -5,7 +5,6 @@
 	if (isset($_GET['token'])) {
 		$token = $_GET['token'];
 		verifyUser($token);
-
 	}
 
 	if (!isset($_SESSION['id'])) {
@@ -36,52 +35,54 @@
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 </head>
 <body>
-	<!-- Navigation Bar -->
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-		<a class="navbar-brand" href="#HOME"><img src="images/logo.png" alt="logo"></a>
-		<div class="navbar-header">
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		</div>
-		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-			<ul class="navbar-nav ml-auto">
-				<li class="nav-item"><a href="index.html#HOME" class="nav-link active">HOME</a></li>
-				<li class="nav-item"><a href="index.html#ABOUT" class="nav-link">ABOUT US</a></li>
-				<li class="nav-item"><a href="index.html#FEATURES" class="nav-link">FEATURES</a></li>
-				<li class="nav-item"><a href="index.html#CONTACT" class="nav-link">CONTACT US</a></li>
-				<li class="nav-item"><a href="index.html?logout=1" class="nav-link">LOG OUT</a></li>
-			</ul>
-		</div>  
-	</nav>
-
-	<section class="submit">
-
-		<div class="container">
-			<?php if (isset($_SESSION['message'])): ?>
-				<div class="alert <?php echo $_SESSION['alert-class']; ?>">
-					<?php
-						echo $_SESSION['message'];
-						unset($_SESSION['message']);
-						unset($_SESSION['alert-class']);
-					?>
+	<header class="header" id="HOME">
+		<div class="header-overlay">
+			<!-- Navigation Bar -->
+			<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+				<a class="navbar-brand" href="#HOME"><img src="images/logo.png" alt="logo"></a>
+				<div class="navbar-header">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
 				</div>
-			<?php endif; ?>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a href="index.html" class="nav-link">HOME</a></li>
+						<li class="nav-item"><a href="index.html" class="nav-link">SEE WHAT OTHERS ARE TALKING ABOUT</a></li>
+						<li class="nav-item"><a href="index.html?logout=1" class="nav-link">LOG OUT</a></li>
+					</ul>
+				</div>  
+			</nav>
 
-			<h3>Welcome, <?php echo $_SESSION['username']; ?>!</h3>
 
-			<?php if (!$_SESSION['verified']): ?>
-				<div class="alert alert-warning">
-					<p>You need to verify your account.<br>
-						Sign in to your email account and click on the verification link we just sent you at <strong><?php echo $_SESSION['email']; ?></strong></p>
+			<section class="submit">
+				<div class="container">
+					<?php if (isset($_SESSION['message'])): ?>
+						<div class="alert <?php echo $_SESSION['alert-class']; ?>">
+							<?php
+								echo $_SESSION['message'];
+								unset($_SESSION['message']);
+								unset($_SESSION['alert-class']);
+							?>
+						</div>
+					<?php endif; ?>
+
+					<h2>Welcome, <?php echo $_SESSION['username']; ?>!</h2>
+
+					<?php if (!$_SESSION['verified']): ?>
+						<div class="alert alert-warning">
+							<p>You need to verify your account.<br>
+								Sign in to your email account and click on the verification link we just sent you at <strong><?php echo $_SESSION['email']; ?></strong></p>
+						</div>
+					<?php endif; ?>
 				</div>
-			<?php endif; ?>
+				
+				<div class="container">
+					<script type="text/javascript" src="https://form.jotform.com/jsform/200191525704043"></script>
+				</div>
+			</section>
 		</div>
-		
-		<div class="container">
-			<script type="text/javascript" src="https://form.jotform.com/jsform/200191525704043"></script>
-		</div>
-	</section>
+	</header>
 
 
 	<!--Footer-->
@@ -125,10 +126,10 @@
 					<h1 class="footer-title">Quick Links</h1>
 					<div class="footer-links">
 						<ul>
-							<li><a href="https://www.ivint.org/wp-content/uploads/2019/11/Media-Kit-IV.pdf">Submit Your Concern</a></li>
-							<li><a href="https://www.ivint.org/team/">The Team</a></li>
-							<li><a href="https://www.ivint.org/feedback/">Privacy Policy</a></li>
-							<li><a href="https://www.ivint.org/feedback/">FAQ</a></li>
+							<li><a href="login.php">Submit Your Concern</a></li>
+							<li><a href="#">The Team</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">FAQ</a></li>
 						</ul>
 					</div>
 					<h1 class="footer-title">Language</h1>
